@@ -9,7 +9,7 @@ def main():
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     pygame.display.set_caption("เกมทดสอบแผนที่และผู้เล่น")
 
-    start_x, start_y = SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2  # ให้ผู้เล่นเริ่มต้นที่กึ่งกลางของหน้าจอ
+    start_x, start_y = SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2  
     player = Player(start_x, start_y)
 
     clock = pygame.time.Clock()

@@ -1,6 +1,6 @@
 import pygame
 import sys
-from map import draw_background  # นำเข้าเฉพาะ draw_background
+from map import draw_background
 from player import Player
 from config import SCREEN_WIDTH, SCREEN_HEIGHT, WHITE
 
@@ -24,7 +24,7 @@ def main():
         player.handle_movement(keys)
 
         draw_background(screen)
-        player.draw(screen, 0, 0)  # ไม่ใช้กล้อง ให้แสดงผู้เล่นตรงตำแหน่งจริง
+        player.draw(screen, 0, 0)
 
         pygame.display.flip()
         clock.tick(60)
